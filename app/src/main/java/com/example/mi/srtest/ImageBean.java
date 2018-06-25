@@ -5,11 +5,11 @@ import java.io.File;
 public class ImageBean {
 
     File path;
-    boolean isCheck;
+    int selected;
 
-    public ImageBean(File path, boolean isCheck) {
+    public ImageBean(File path, int selected) {
         this.path = path;
-        this.isCheck = isCheck;
+        this.selected = selected;
     }
 
     public File getPath() {
@@ -20,11 +20,11 @@ public class ImageBean {
         this.path = path;
     }
 
-    public boolean isCheck() {
-        return isCheck;
+    public int isCheck() {
+        return selected;
     }
 
-    public void setCheck(boolean check) {
-        isCheck = check;
+    public void setCheck(int check) {
+        selected = check;
     }
 }

@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "files exists and size = " + files.length);
                 for (File file : files) {
                     if(file.exists() && file.isFile() && isImage(file)){
-                        al.add(new ImageBean(file, false));
+                        al.add(new ImageBean(file, 0));
                     }
                 }
             }
